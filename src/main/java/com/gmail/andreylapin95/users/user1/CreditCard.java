@@ -1,13 +1,13 @@
 package com.gmail.andreylapin95.users.user1;
 
 public class CreditCard{
+    private int amountNumber;
+    private int currentAmount;
+
     public CreditCard(int amountNumber, int currentAmount) {
         this.amountNumber = amountNumber;
         this.currentAmount = currentAmount;
     }
-
-    private int amountNumber;
-    private int currentAmount;
 
     public int getAmountNumber() {
         return amountNumber;

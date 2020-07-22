@@ -22,11 +22,17 @@ public class Main {
         OperationWithMoneyService operationWithMoneyServiceCreditCard = new OperationWithMoneyServiceCreditCard();
         InformationService informationOfCreditCard = new InformationOfCreditCard();
         PrintService printServiceConsole = new PrintServiceConsoleImpl();
-        operationWithMoneyServiceCreditCard.depositMoney(creditCard1,1000);
-        operationWithMoneyServiceCreditCard.depositMoney(creditCard2,5000);
-        operationWithMoneyServiceCreditCard.withdrawingMoney(creditCard3, 2500);
-        printServiceConsole.printString(informationOfCreditCard.allInformation(creditCard1));
-        printServiceConsole.printString(informationOfCreditCard.allInformation(creditCard2));
-        printServiceConsole.printString(informationOfCreditCard.allInformation(creditCard3));
+        operationWithMoneyServiceCreditCard.
+                depositMoney(creditCard1,1000);
+        operationWithMoneyServiceCreditCard.
+                depositMoney(creditCard2,5000);
+        operationWithMoneyServiceCreditCard.
+                withdrawingMoney(creditCard3, 2500);
+        printServiceConsole.
+                printString(informationOfCreditCard.allInformation(creditCard1));
+        printServiceConsole.
+                printString(informationOfCreditCard.allInformation(creditCard2));
+        printServiceConsole.
+                printString(informationOfCreditCard.allInformation(creditCard3));
     }
 }
