@@ -7,12 +7,14 @@ public class OperationWithMoneyServiceCreditCard implements OperationWithMoneySe
     @Override
     public void depositMoney(CreditCard creditCard, int amountOfMoney) {
         int currentAmount = creditCard.getCurrentAmount();
-        creditCard.setCurrentAmount(currentAmount+amountOfMoney);
+        currentAmount = currentAmount+amountOfMoney;
+        creditCard.setCurrentAmount(currentAmount);
     }
 
     @Override
     public void withdrawingMoney(CreditCard creditCard, int amountOfMoney) {
         int currentAmount = creditCard.getCurrentAmount();
-        creditCard.setCurrentAmount(currentAmount-amountOfMoney);
+        currentAmount = currentAmount -amountOfMoney;
+        creditCard.setCurrentAmount(currentAmount);
     }
 }

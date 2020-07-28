@@ -10,7 +10,7 @@ public class RandomServiceImpl implements RandomService {
     public int randomNumber() {
         Numbers numbers = new Numbers();
         int max = numbers.max;
-        Random random = new Random();
+        final Random random = new Random();
         return random.nextInt(max);
     }
 }
